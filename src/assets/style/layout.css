@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+}
+#root{
+    width: inherit;
+    min-height: inherit;
+}
+body{
+    min-height: 100vh;
+}
+.Card{
+    width: 100%;
+    height: inherit;
+    padding: 1em;
+}
+.Header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2em;
+}
+.IntroContainer{
+    display: flex;
+    flex-direction: column;
+}
+.line{
+    width: 100%;
+    height: 1px;
+}
+.toggleContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+}
+.SocialMediaCards{
+    display: grid;
+    grid-template: repeat(4,1fr)/repeat(1,1fr);
+    gap: 1em;
+}
+.OverviewGrid{
+    display: grid;
+    grid-template: repeat(8,1fr)/repeat(1,1fr);
+    gap: 1em
+}
+/* cardLayout */
+.CardA{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+.CardHead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+    gap: 0.4em;
+}
+.Data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4em;
+}
+.CardB{
+    padding: 1em;
+}
+.OverviewTitle{
+    margin: 0.5em 0;
+}
+.CardB .CardBIntro,.CardB .CardBInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em;
+}
+.dataB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6em;
+}
+
+@media screen and (min-width:70em) {
+    .Card{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .Header{
+        flex-direction: row;
+        min-height: 20vh;
+        align-items: center;
+    }
+    .line{
+        display: none;
+    }
+    .toggleContainer{
+        gap: 1em;
+    }
+    .SocialMediaCards{
+        display: grid;
+        grid-template: repeat(1,1fr)/repeat(4,1fr);
+        gap: 2em;
+        height: 12em;
+
+    }
+    .OverviewGrid{
+        grid-template: repeat(2,1fr)/repeat(4,1fr);
+        gap: 2em;
+        height: 7em;
+    }
+}

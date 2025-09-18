@@ -1,0 +1,32 @@
+:root{
+    /* Primary Colors */
+    --Green500: hsl(163, 72%, 41%);
+    --Red500: hsl(356, 69%, 56%);
+    --Facebook: hsl(208, 92%, 53%);
+    --Twitter: hsl(203, 89%, 53%);
+    --Instagram: hsl(37, 97%, 70%),hsl(5, 77%, 71%),hsl(329, 70%, 58%);
+    --YouTube: hsl(348, 97%, 39%);
+    /* Dark Theme */
+    --Toggle: linear-gradient(to right,hsl(210, 79%, 56%), hsl(146, 68%, 55%));
+    /* Default Theme Colors */
+    --BG: hsl(230, 17%, 14%);
+    --Top_BG_Pattern: hsl(232, 19%, 15%);
+    --Card_BG_HOV: hsl(228, 28%, 30%);
+    --Text1: hsl(230, 22%, 74%);
+    --Text2: hsl(0, 100%, 100%);
+}
+/* toggle Active */
+.toggle-input:checked + .toggle-label{
+    background: var(--Toggle);
+}
+.toggle-input:checked + .toggle-label::after{
+    left: 60%;
+    background: var(--BG);
+}
+/* Card hover */
+.CardA:hover, .CardB:hover {
+    background-color: var(--Card_BG_HOV);
+}
+.CardA:active, .CardB:active {
+    transform: translateY(-10px);
+}
